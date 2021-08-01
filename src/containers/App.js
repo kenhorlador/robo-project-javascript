@@ -25,6 +25,7 @@ class App extends Component {
     }
 
     render() {
+        // Fetch Robots API
         fetch('http://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
         .then(users => {this.setState({ robots:users }) })
@@ -32,6 +33,7 @@ class App extends Component {
         const filteredRobots = this.state.robots.filter(robot => {
             return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
         })
+        // Loading screen
         if (this.state.robots.length === 0) {
             return <h3 className='tc'>Loading...</h3>
         } else {
@@ -49,3 +51,5 @@ class App extends Component {
 }
 
 export default App;
+
+// https://archive.thehated3.workers.dev/0:/AlgoExpert.io/150%20Interview%20Problems/
