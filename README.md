@@ -1,3 +1,6 @@
+# Robosearch-RoboApp
+This is a simple ReactJS Application that integrates APIs of names of people and displaying it into the screen.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
